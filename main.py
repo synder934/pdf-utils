@@ -20,6 +20,9 @@ if __name__ == "__main__":
     input_dir = Path("inputs")
     output_dir = Path("outputs")
 
+    os.mkdir(input_dir)
+    os.mkdir(output_dir)
+
     completed = set()
     for file in os.listdir(output_dir):
         name = file.split(".")[0]
